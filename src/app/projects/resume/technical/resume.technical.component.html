@@ -1,0 +1,28 @@
+<div class="section">
+    <div class="sectionHeader">
+        Technical Background
+    </div>
+    <div class="sectionBorder">
+        <div class="row" *ngFor="let section of results">
+            <div class="col-md-12">
+                <span [innerHTML]="section.Section" style="font-weight: bold; font-size: 12pt"></span>
+            </div>
+            <div *ngFor="let item of section.Details; let i = index" style="margin-left:.1in">
+                <div *ngIf="i % 2 == 0">
+                    <div class="col-md-3">
+                        <span [innerHTML]="section.Details[i].TechName" style="font-weight: bold"></span>
+                    </div>
+                    <div class="col-md-3">
+                        <span [innerHTML]="section.Details[i].TechYears"></span>
+                    </div>
+                    <div class="col-md-3" *ngIf="section.Details[i + 1]">
+                        <span [innerHTML]="section.Details[i + 1].TechName" style="font-weight: bold"></span>
+                    </div>
+                    <div class="col-md-3" *ngIf="section.Details[i + 1]">
+                        <span [innerHTML]="section.Details[i + 1].TechYears"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+.router-link-active { background-color: red; }
+
+.is-active { color: red; }
+
+.section {
+    /*background-color: gray;*/
+}
+.sectionHeader {
+    font-weight: bold;
+    padding: .1in;
+    color: white;
+    background-color: #605D53;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 10px 10px 0px 0px;
+    width: 25%;
+}
+.sectionBorder {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    padding: .1in;
+}

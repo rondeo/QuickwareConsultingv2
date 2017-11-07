@@ -1,0 +1,21 @@
+<app-projects-header projectName="My Resume"></app-projects-header>
+
+<div class="container sections-wrapper">
+  <div class="row col-md-12">
+    <section class="section">
+      <div class="section-inner">
+        <ul class="nav navbar-nav">
+          <li><a [routerLink]="'complete'" [routerLinkActive]="['is-active']">Complete</a></li>
+          <li><a [routerLink]="'technical'" [routerLinkActive]="['is-active']">Technical Background</a></li>
+          <li><a [routerLink]="'experience'" [routerLinkActive]="['is-active']">Experience</a></li>
+          <li><a [routerLink]="'certifications'" [routerLinkActive]="['is-active']">Certifications</a></li>
+          <li><a [routerLink]="'education'" [routerLinkActive]="['is-active']">Education</a></li>
+          <li><a [routerLink]="'website'" [routerLinkActive]="['is-active']">Website</a></li>
+        </ul>
+      </div>
+      <div class="section-inner">
+        <router-outlet></router-outlet>
+      </div>
+    </section>
+  </div>
+</div>

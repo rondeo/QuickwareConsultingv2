@@ -1,0 +1,30 @@
+<div class="section">
+    <div class="sectionHeader">
+        Education
+    </div>
+    <div *ngIf="results" class="sectionBorder">
+        <div class="row">
+            <div class="col-md-4">
+                <span [innerHTML]="results.UniversityName" style="font-weight: bold"></span>
+            </div>
+            <div class="col-md-3">
+                <span [innerHTML]="results.UniversityLocation"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <span [innerHTML]="results.DateGraduated"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <span [innerHTML]="results.Major"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <span [innerHTML]="results.Minor"></span>
+            </div>
+        </div>
+    </div>
+</div>

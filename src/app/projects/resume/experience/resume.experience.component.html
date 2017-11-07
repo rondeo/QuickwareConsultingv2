@@ -1,0 +1,32 @@
+<div class="section">
+    <div class="sectionHeader">
+        Experience
+    </div>
+    <div *ngFor="let item of results" class="sectionBorder" class="sectionBorder">
+        <div class="row">
+            <div class="col-md-3" style="font-weight: bold">
+                <span [innerHTML]="item.CompanyName"></span>
+            </div>
+            <div class="col-md-2">
+                {{item.CompanyLocation}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                {{item.DateRange}}
+            </div>
+            <div class="col-md-8">
+                {{item.PositionTitle}}
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-12" style="padding-bottom:10px;">
+                {{item.PositionDuties}}
+            </div>
+            <div class="col-md-12">
+                <span style="font-weight: bold; font-style: italic">Technologies</span>: {{item.PositionTechnologies}}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<app-projects-header projectName="My Pro Pick 'Em Game"></app-projects-header>
+
+<div class="container sections-wrapper">
+  <div class="row col-md-12">
+    <section class="section">
+      <div class="section-inner">
+        <ul class="nav navbar-nav">
+          <li class="menu-item"><a [routerLink]="'dashboard'" [routerLinkActive]="['is-active']">Dashboard</a></li>
+          <li class="menu-item"><a [routerLink]="'nflStandings'" [routerLinkActive]="['is-active']">NFL Standings</a></li>
+          <li class="menu-item"><a routerLink="/" target="_self">User Standings</a></li>
+          <li class="menu-item"><a routerLink="/" target="_self">Weekly Challenge</a></li>
+          <li class="menu-item"><a routerLink="/" target="_self">History</a></li>
+          <li class="menu-item"><a routerLink="/" target="_self">Profile</a></li>
+        </ul>
+      </div>
+      <div class="section-inner">
+        <router-outlet></router-outlet>
+      </div>
+    </section>
+  </div>
+</div>

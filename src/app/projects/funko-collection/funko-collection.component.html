@@ -1,0 +1,44 @@
+<app-projects-header projectName="The Funko&#174; Collection Tracker"></app-projects-header>
+
+<div class="container sections-wrapper">
+  <div class="row col-md-12">
+    <section class="section">
+      <div class="section-inner">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="col-md-3">
+                    Category: <select [(ngModel)]="categoryQuery">
+                        <option *ngFor="let item of categoryCollection" [value]="item">{{item}}</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    Title: <input type="text" [(ngModel)]="titleQuery" placeholder="Title Filter" >
+                </div>
+                <div class="col-md-2">
+                    Only show Exclusives? <input type="checkbox" [(ngModel)]="onlyShowExclusives">
+                </div>
+            </div>
+            <br/><br/>
+            <div class="row-fluid">
+                <div class="col-md-12">
+                    <div class="row">
+                      <div class="tableHeader col-md-1">Number</div>
+                      <div class="tableHeader col-md-2">Category</div>
+                      <div class="tableHeader col-md-2">Title</div>
+                      <div class="tableHeader col-md-2">Is Exclusive?</div>
+                    </div>
+                    <div class="row" *ngFor="let item of results | funkoCollectionFilter: categoryQuery:titleQuery:onlyShowExclusives">
+                      <div class="col-md-1"><span [innerHTML]="item.Number"></span></div>
+                      <div class="col-md-2"><span [innerHTML]="item.Category"></span></div>
+                      <div class="col-md-2"><span [innerHTML]="item.Title"></span></div>
+                      <div class="col-md-2"><span [innerHTML]="item.IsExclusive"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+

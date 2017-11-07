@@ -1,0 +1,19 @@
+<div class="section">
+    <div class="sectionHeader">
+        Certifications
+    </div>
+    <div class="sectionBorder">
+        <div *ngFor="let cert of results" style="padding-bottom: 10px">
+            <div class="row">
+                <div class="col-md-12">
+                    <span style="font-weight: bold" [innerHTML]="cert.Title"></span>
+                </div>
+            </div>
+            <div class="row" *ngFor="let test of cert.Tests">
+                <div class="col-md-12">
+                    <span [innerHTML]="test"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

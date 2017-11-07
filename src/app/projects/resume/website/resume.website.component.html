@@ -1,0 +1,12 @@
+<div class="section">
+    <div class="sectionHeader">
+        Websites
+    </div>
+     <div class="sectionBorder">
+        <div class="row" *ngFor="let item of results">
+            <div class="col-md-12">
+                <span [innerHTML]="item.Url"></span>
+            </div>
+        </div>
+    </div>
+</div>

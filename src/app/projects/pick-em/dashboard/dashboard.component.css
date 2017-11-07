@@ -1,0 +1,11 @@
+.component {
+  border: 1px solid grey
+}
+
+.bottom-buffer {
+  margin-bottom:260px;
+}
+
+.top-buffer {
+  margin-top:20px;
+}
