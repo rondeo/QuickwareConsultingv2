@@ -1,3 +1,39 @@
-<p>
-  division works!
-</p>
+<div class="row col-md-12" *ngIf="showDivisionName">
+  {{name}}
+</div>
+<div class="row">
+  <div class="col-md-6 division-table-column-header">Team Name</div>
+  <div class="col-md-2 division-table-column-header">Wins</div>
+  <div class="col-md-2 division-table-column-header">Losses</div>
+  <div class="col-md-2 division-table-column-header">Ties</div>
+</div>
+<div *ngFor="let team of teams">
+  <div class="row">
+      <div class="col-md-6">
+          <button class="btn btn-link" role="link" (click)="staticModal.show()">
+              {{team.City}} {{team.Name}}
+          </button>
+      </div>
+      <div class="col-md-2">{{team.NumberOfWins}}</div>
+      <div class="col-md-2">{{team.NumberOfLosses}}</div>
+      <div class="col-md-2">{{team.NumberOfTies}}</div>
+  </div>
+</div>
+
+  <!-- <div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static'}"
+    tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Static modal</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="staticModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        This is static modal, backdrop click will not close it.
+        Click <b>&times;</b> to close modal.
+      </div>
+    </div>
+  </div>
+</div> -->

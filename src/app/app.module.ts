@@ -47,6 +47,8 @@ import { ProjectsPickEmStatsCardComponent } from './projects/pick-em/dashboard/s
 import { ProjectsProPickEmNflStandingsComponent } from './projects/pick-em/nfl-standings/nfl-standings.component';
 import { ProjectsProPickEmNflStandingsConferenceComponent } from './projects/pick-em/nfl-standings/conference/conference.component';
 import { ProjectsProPickEmNflStandingsDivisionComponent } from './projects/pick-em/nfl-standings/division/division.component';
+import { CardHeaderComponent } from './projects/pick-em/shared/components/card-header/card-header.component';
+import { CardFooterComponent } from './projects/pick-em/shared/components/card-footer/card-footer.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +88,9 @@ import { ProjectsProPickEmNflStandingsDivisionComponent } from './projects/pick-
     ProjectsPickEmStatsCardComponent,
     ProjectsProPickEmNflStandingsComponent,
     ProjectsProPickEmNflStandingsConferenceComponent,
-    ProjectsProPickEmNflStandingsDivisionComponent
+    ProjectsProPickEmNflStandingsDivisionComponent,
+    CardHeaderComponent,
+    CardFooterComponent
   ],
   imports: [
     BrowserModule,

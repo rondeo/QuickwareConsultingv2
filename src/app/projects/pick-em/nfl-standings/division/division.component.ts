@@ -2,8 +2,8 @@ import { Component, OnInit, Input  } from '@angular/core';
 // import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Observable } from 'rxjs/Observable';
 
-import { Team } from '../nfl-standings.mock-data';
-import { TeamService } from '../nfl-standings.service';
+import { Team } from '../../shared/data/nfl-standings.mock-data';
+import { TeamService } from '../../shared/services/team.service';
 
 // import { TeamDetailModalComponent } from '../../teamDetail/teamDetail.modal.component';
 
