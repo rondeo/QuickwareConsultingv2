@@ -13,7 +13,7 @@ import { ProjectsFunkoCollectionComponent } from './projects/funko-collection/fu
 
 import { ProjectsPickEmComponent } from './projects/pick-em/pick-em.component';
 import { ProjectsPickEmDashboardComponent } from './projects/pick-em/dashboard/dashboard.component';
-// import { PickEmNFLStandingsComponent } from './pickem/nfl_standings/nfl_standings.component';
+import { ProjectsProPickEmNflStandingsComponent } from './projects/pick-em/nfl-standings/nfl-standings.component';
 
 export const APP_ROUTES: Routes = [
     {
@@ -47,7 +47,7 @@ export const APP_ROUTES: Routes = [
       children: [
         { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
         { path: 'dashboard', component: ProjectsPickEmDashboardComponent },
-        // { path: 'nflStandings', component: PickEmNFLStandingsComponent }
+        { path: 'nflStandings', component: ProjectsProPickEmNflStandingsComponent }
       ]
     },
 ];
