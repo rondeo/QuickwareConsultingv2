@@ -7,17 +7,15 @@
   <div class="col-md-2 division-table-column-header">Losses</div>
   <div class="col-md-2 division-table-column-header">Ties</div>
 </div>
-<div *ngFor="let team of teams">
-  <div class="row">
-      <div class="col-md-6">
-          <button class="btn btn-link" role="link" (click)="staticModal.show()">
-              {{team.City}} {{team.Name}}
-          </button>
-      </div>
-      <div class="col-md-2">{{team.NumberOfWins}}</div>
-      <div class="col-md-2">{{team.NumberOfLosses}}</div>
-      <div class="col-md-2">{{team.NumberOfTies}}</div>
+<div  class="row" *ngFor="let team of teams">
+  <div class="col-md-6">
+      <button class="btn btn-link remove-padding" role="link" (click)="staticModal.show()">
+          {{team.City}} {{team.Name}}
+      </button>
   </div>
+  <div class="col-md-2 center-text">{{team.NumberOfWins}}</div>
+  <div class="col-md-2 center-text">{{team.NumberOfLosses}}</div>
+  <div class="col-md-2 center-text">{{team.NumberOfTies}}</div>
 </div>
 
   <!-- <div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static'}"
