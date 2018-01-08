@@ -32,7 +32,7 @@ export class TeamService {
   }
 
   _errorHandler(error: Response) {
-    console.error(error)
+    console.error(error);
     return Observable.throw(error || 'Server Error');
   }
 

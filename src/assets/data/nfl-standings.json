@@ -30,5 +30,5 @@
 {"Id": 29, "City": "Seattle", "Name": "Seahawks", "Conference": "NFC", "Division": "West", "NumberOfWins": 7,"NumberOfLosses": 8,"NumberOfTies": 1, "IsActive": true},
 {"Id": 30, "City": "Tampa Bay", "Name": "Buccaneers", "Conference": "NFC", "Division": "South", "NumberOfWins": 7,"NumberOfLosses": 8,"NumberOfTies": 1, "IsActive": true},
 {"Id": 31, "City": "Tennessee", "Name": "Titans", "Conference": "AFC", "Division": "South", "NumberOfWins": 7,"NumberOfLosses": 8,"NumberOfTies": 1, "IsActive": true},
-{"Id": 32, "City": "Washington", "Name": "Redskin", "Conference": "NFC", "Division": "East", "NumberOfWins": 7,"NumberOfLosses": 8,"NumberOfTies": 1, "IsActive": true}
+{"Id": 32, "City": "Washington", "Name": "Redskins", "Conference": "NFC", "Division": "East", "NumberOfWins": 7,"NumberOfLosses": 8,"NumberOfTies": 1, "IsActive": true}
 ]

@@ -1,3 +1,25 @@
-<p>
-  conference works!
-</p>
+<div class="row">
+  <div class="col-lg-12">
+    <h3>{{name}}</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-10">
+    <app-projects-pick-em-nfl-standings-division [conference]="name" [name]="'East'" [showDivisionName]="true"></app-projects-pick-em-nfl-standings-division>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-10">
+    <app-projects-pick-em-nfl-standings-division [conference]="name" [name]="'North'" [showDivisionName]="true"></app-projects-pick-em-nfl-standings-division>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-10">
+    <app-projects-pick-em-nfl-standings-division [conference]="name" [name]="'South'" [showDivisionName]="true"></app-projects-pick-em-nfl-standings-division>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-10">
+    <app-projects-pick-em-nfl-standings-division [conference]="name" [name]="'West'" [showDivisionName]="true"></app-projects-pick-em-nfl-standings-division>
+  </div>
+</div>

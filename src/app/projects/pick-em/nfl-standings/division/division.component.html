@@ -1,21 +1,21 @@
-<div class="row col-md-12" *ngIf="showDivisionName">
+<div class="row col-md-12 division-name" *ngIf="showDivisionName">
   {{name}}
 </div>
-<div class="row">
-  <div class="col-md-6 division-table-column-header">Team Name</div>
-  <div class="col-md-2 division-table-column-header">Wins</div>
-  <div class="col-md-2 division-table-column-header">Losses</div>
-  <div class="col-md-2 division-table-column-header">Ties</div>
+<div class="row underline">
+  <div class="col-sm-6 division-table-column-header remove-padding">Name</div>
+  <div class="col-sm-2 division-table-column-header remove-padding center-text">Wins</div>
+  <div class="col-sm-2 division-table-column-header remove-padding center-text">Losses</div>
+  <div class="col-sm-2 division-table-column-header remove-padding center-text">Ties</div>
 </div>
-<div  class="row" *ngFor="let team of teams">
-  <div class="col-md-6">
+<div class="row division-table-teams remove-padding" *ngFor="let team of teams">
+  <div class="col-sm-6 remove-padding">
       <button class="btn btn-link remove-padding" role="link" (click)="staticModal.show()">
           {{team.City}} {{team.Name}}
       </button>
   </div>
-  <div class="col-md-2 center-text">{{team.NumberOfWins}}</div>
-  <div class="col-md-2 center-text">{{team.NumberOfLosses}}</div>
-  <div class="col-md-2 center-text">{{team.NumberOfTies}}</div>
+  <div class="col-sm-2 remove-padding center-text">{{team.NumberOfWins}}</div>
+  <div class="col-sm-2 remove-padding center-text">{{team.NumberOfLosses}}</div>
+  <div class="col-sm-2 remove-padding center-text">{{team.NumberOfTies}}</div>
 </div>
 
   <!-- <div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static'}"

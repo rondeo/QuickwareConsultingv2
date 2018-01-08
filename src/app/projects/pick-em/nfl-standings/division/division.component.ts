@@ -10,7 +10,8 @@ import { TeamService } from '../../shared/services/team.service';
 @Component({
   selector: 'app-projects-pick-em-nfl-standings-division',
   templateUrl: './division.component.html',
-  styleUrls: ['./division.component.css']
+  styleUrls: ['./division.component.less'],
+  providers: [TeamService]
 })
 export class ProjectsProPickEmNflStandingsDivisionComponent implements OnInit {
 
