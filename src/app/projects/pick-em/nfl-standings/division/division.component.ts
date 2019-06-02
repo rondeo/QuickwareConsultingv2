@@ -1,11 +1,7 @@
 import { Component, OnInit, Input  } from '@angular/core';
-// import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { Observable } from 'rxjs/Observable';
 
-import { Team } from '../../shared/data/nfl-standings.mock-data';
+import { Team } from '@assets/data/nfl-standings.mock-data';
 import { TeamService } from '../../shared/services/team.service';
-
-// import { TeamDetailModalComponent } from '../../teamDetail/teamDetail.modal.component';
 
 @Component({
   selector: 'app-projects-pick-em-nfl-standings-division',
@@ -25,7 +21,7 @@ export class ProjectsProPickEmNflStandingsDivisionComponent implements OnInit {
 
   constructor(
     private teamService: TeamService) {
-      this.getTeams();
+      // this.getTeams();
     }
 
   ngOnInit(): void {
@@ -37,7 +33,7 @@ export class ProjectsProPickEmNflStandingsDivisionComponent implements OnInit {
         .subscribe((response) => {
             this.teams2 = response;
 
-            console.log('teams2', this.teams2);
+            // console.log('teams2', this.teams2);
         },
         error => this.error = error);
   }

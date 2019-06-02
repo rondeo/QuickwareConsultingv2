@@ -1,7 +1,7 @@
 [
   {"Id": 1, "Name": "Player 1", "Wins": 1, "Losses": "9", "WinPct": "10.00"},
-  {"Id": 1, "Name": "Player 2", "Wins": 5, "Losses": "5", "WinPct": "50.00"},
-  {"Id": 1, "Name": "Player 3", "Wins": 0, "Losses": "10", "WinPct": "00.00"},
-  {"Id": 1, "Name": "Player 4", "Wins": 7, "Losses": "3", "WinPct": "70.00"},
-  {"Id": 1, "Name": "Player 5", "Wins": 10, "Losses": "0", "WinPct": "100.00"}
+  {"Id": 2, "Name": "Player 2", "Wins": 5, "Losses": "5", "WinPct": "50.00"},
+  {"Id": 3, "Name": "Player 3", "Wins": 0, "Losses": "10", "WinPct": "00.00"},
+  {"Id": 4, "Name": "Player 4", "Wins": 7, "Losses": "3", "WinPct": "70.00"},
+  {"Id": 5, "Name": "Player 5", "Wins": 10, "Losses": "0", "WinPct": "100.00"}
 ]

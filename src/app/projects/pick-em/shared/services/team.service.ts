@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 
 import 'rxjs/add/operator/toPromise';
 
-import { Team, TEAMS } from '../data/nfl-standings.mock-data';
+import { Team, TEAMS } from '@assets/data/nfl-standings.mock-data';
 
 @Injectable()
 export class TeamService {
@@ -44,8 +44,8 @@ export class TeamService {
 
     return this.http.get(this.dataUrl)
       .map((response: Response) => (<Team[]>response.json())
-        .filter((x) => x.Conference.toLowerCase() === conference.toLowerCase()
-          && x.Division.toLowerCase() === division.toLowerCase()))
+      .filter((x) => x.Conference.toLowerCase() === conference.toLowerCase()
+        && x.Division.toLowerCase() === division.toLowerCase()))
       .toPromise();
 
     // let promise = new Promise((resolve, reject) => {

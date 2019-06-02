@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 
 import 'rxjs/add/operator/toPromise';
 
-import { UserStandings } from '../data/user-standings.mock-data';
+import { UserStandings } from '@assets/data/user-standings.mock-data';
 
 @Injectable()
 export class UserStandingsService {
